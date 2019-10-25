@@ -1,0 +1,10 @@
+{
+        "@metadata": {
+                "authors": [
+                        "Yoshihiro Okumura"
+                ]
+        },
+	"selfdoi-desc": "Render self page doi using <code>&lt;selfdoi /&gt;</code> tag.",
+        "selfdoi-error-prefix": "The DOI prefix is not configured.",
+        "selfdoi-error-schema": "Invlid schema parameter found."
+}

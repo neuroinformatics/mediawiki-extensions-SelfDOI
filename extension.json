@@ -1,0 +1,31 @@
+{
+	"name": "SelfDOI",
+	"version": "1.0.0",
+	"author": [
+		"Yoshihiro Okumura"
+	],
+	"url": "https://github.com/neuroinformatics/mediawiki-extensions-SelfDOI",
+	"descriptionmsg": "selfdoi-desc",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"type": "parserhook",
+	"config": {
+		"SelfDOIPrefix": "",
+		"SelfDOISiteId": "",
+		"SelfDOISchema": "none"
+	},
+	"MessagesDirs": {
+		"SelfDOI": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SelfDOI\\": "includes/"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "MediaWiki\\Extension\\SelfDOI\\Hooks::onParserFirstCallInit"
+	},
+	"manifest_version": 1
+}

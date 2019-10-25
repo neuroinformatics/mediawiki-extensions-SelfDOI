@@ -1,0 +1,10 @@
+{
+        "@metadata": {
+                "authors": [
+                        "Yoshihiro Okumura"
+                ]
+        },
+	"selfdoi-desc": "<code>&lt;selfdoi /&gt;</code> タグでこのページのDOIをレンダリングする",
+        "selfdoi-error-prefix": "DOIプレックスが設定されていません",
+        "selfdoi-error-schema": "不正な schema パラメータです"
+}
