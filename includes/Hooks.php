@@ -81,6 +81,6 @@ class Hooks
      */
     private static function renderResponse($message)
     {
-        return '<!-- MediaWiki extension SelfDOI -->'.$message.'<!-- End of SelfDOI -->';
+        return ['<!-- MediaWiki extension SelfDOI -->'.$message.'<!-- End of SelfDOI -->', 'markerType' => 'nowiki'];
     }
 }
