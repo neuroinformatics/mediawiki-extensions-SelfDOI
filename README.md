@@ -1,6 +1,6 @@
 # MediaWiki Extension SelfDOI
 
-This extension provides `<selfDOI />` to render self page [doi](https://www.doi.org/).
+This extension provides `<selfdoi />` tag to render self page [doi](https://www.doi.org/).
 
 ## Install
 
