@@ -6,8 +6,6 @@ class Hooks
 {
     /**
      * register tag renderer callbacks.
-     *
-     * @param \Parser $parser
      */
     public static function onParserFirstCallInit(\Parser $parser)
     {
@@ -17,10 +15,7 @@ class Hooks
     /**
      * render <selfdoi> tag.
      *
-     * @param string   $input
-     * @param array    $args
-     * @param \Parser  $parser
-     * @param \PPFrame $frame
+     * @param string $input
      *
      * @return string
      */
@@ -53,9 +48,9 @@ class Hooks
             // append meta tags
             $title = $parser->getTitle()->getText();
             $meta = sprintf('<meta name="citation_title" input="%s" />', htmlspecialchars($title, ENT_QUOTES))."\n";
-            $parser->mOutput->addHeadItem($meta);
+            $parser->getOutput()->addHeadItem($meta);
             $meta = sprintf('<meta name="citation_doi" input="%s" />', $doi)."\n";
-            $parser->mOutput->addHeadItem($meta);
+            $parser->getOutput()->addHeadItem($meta);
             $isFirst = false;
         }
 
